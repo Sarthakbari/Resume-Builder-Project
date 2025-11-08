@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume Builder Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 class="title">Welcome to our Resume Builder</h1>
+    <h2 class="title">Select resume template to build resume.</h2>
+
+    <div class="template-grid">
+        <div class="template-card" onclick="selectedTemplate('template1')">
+            <img src="assets/tamplate1.png" alt="Template1">
+            <p>Professional resume</p>
+        </div>
+
+        <div class="template-card" onclick="selectedTemplate('template1')">
+            <img src="assets/template2.png" alt="Template1">
+            <p>Modern resume</p>
+        </div>
+    </div>
+
+    <script>
+        function selectedTemplate(templateName){
+            localStorage.setItem('selectedTemplate', templateName);
+            window.location.href = 'form.html'
+        }
+    </script>
 </body>
 </html>

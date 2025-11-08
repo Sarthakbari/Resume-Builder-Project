@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Enter Your Details to Build Resume</h1>
+
+    <div class="form-container">
+        <form  id="resumeForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="title" placeholder="Job Title">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="Phone" placeholder="Phone">
+            <input type="text" id="address" placeholder="Address">
+
+            <textarea id="summary" placeholder="Professional Summary"></textarea>
+            <textarea id="education" placeholder="Educational Details"></textarea>
+            <textarea id="experience" placeholder="Work Experience"></textarea>
+            <textarea id="Skills" placeholder="Skills (comma separated)"></textarea>
+
+            <button type="button" onclick="generateResume()">Resume Preview</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
