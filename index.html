@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Builder Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder Project</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">Sarthak Bari</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#templates">Templates</a>
+      <a href="#contact">Contact</a>
+      <a href="https://linkedin.com/in/sarthakbari" target="_blank">LinkedIn</a>
+      <a href="https://github.com/sarthakbari" target="_blank">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-content" id="about">
     <h1 class="title">Welcome to our Resume Builder</h1>
     <h2 class="title">Select resume template to build resume.</h2>
 
-    <div class="template-grid">
-        <div class="template-card" onclick="selectedTemplate('template1')">
-            <img src="assets/tamplate1.png" alt="Template1">
-            <p>Professional resume</p>
-        </div>
-
-        <div class="template-card" onclick="selectedTemplate('template1')">
-            <img src="assets/template2.png" alt="Template1">
-            <p>Modern resume</p>
-        </div>
+    <div class="description">
+      <p><strong>Resume Builder Project</strong> is a simple yet powerful web tool
+        designed to help students and professionals create personalized, professional resumes with just a few clicks.
+        Choose your favorite template, fill in your details, and download your ready-to-use PDF instantly. Built with
+        modern UI design and smooth user experience, this project simplifies resume creation for everyone.</p>
     </div>
 
-    <script>
-        function selectedTemplate(templateName){
-            localStorage.setItem('selectedTemplate', templateName);
-            window.location.href = 'form.html'
-        }
-    </script>
+    <!-- ===== TEMPLATE SELECTION ===== -->
+    <div class="template-grid" id="templates">
+      <div class="template-card" onclick="selectedTemplate('template1')">
+        <img src="assets/template1.png" alt="Template1">
+        <p>Professional Resume</p>
+      </div>
+
+      <div class="template-card" onclick="selectedTemplate('template2')">
+        <img src="assets/template2.png" alt="Template2">
+        <p>Modern Resume</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <footer id="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:barisarthak2005@gmail.com">barisarthak2005@gmail.com</a></p>
+    <p>LinkedIn: <a href="linkedin.com/in/sarthak-bari-237504305" target="_blank">linkedin.com/in/sarthakbari</a></p>
+    <p>GitHub: <a href="https://github.com/sarthakbari" target="_blank">github.com/sarthakbari</a></p>
+    <p>© 2025 Sarthak Bari | Resume Builder Project</p>
+  </footer>
+
+  <script>
+    function selectedTemplate(templateName) {
+      localStorage.setItem('selectedTemplate', templateName);
+      window.location.href = 'form.html';
+    }
+  </script>
+
 </body>
 </html>
