@@ -23,7 +23,7 @@
 ### 📸 Project Preview
 
 <p align="center">
-  <img src="assets/resume-builder.png" alt="Resume Builder Preview" width="900">
+  <img width="900" alt="Screenshot 2026-08-18 154430" src="https://github.com/user-attachments/assets/6e96f5ca-f3ed-43d9-b7a9-7fb43a3c1f54" />
 </p>
 
 ---
